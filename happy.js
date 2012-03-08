@@ -6,7 +6,7 @@
     var fields = [], item;
     
     function getError(error) {
-      return $('<span id="'+error.id+'" class="help-inline">'+error.message+'</span>');
+      return $('<span id="'+error.id+'" class="alert alert-error">'+error.message+'</span>');
     }
     function handleSubmit() {
       var errors = false, i, l;
