@@ -24,23 +24,23 @@
         });
       }); 
     </script>
-    <style>
-        body {
-            font-family: Helvetica;
-        }
-        input {
-            display: block;
-        }
-        .unhappyMessage {
-            display:  block;
-        }
-    </style>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <form id="awesomeForm" action="/lights/camera" method="post">
-      <input id="yourName" type="text" name="name" />
-      <input id="email" type="text" name="email" class="" />
-      <input type="submit" value="go" />
+      <div class="control-group">
+        <label class="control-label" for="yourName">Your name:</label>
+        <div class="controls">
+          <input id="yourName" type="text" name="name" />
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="email">Your E-Mail:</label>
+        <div class="controls">
+          <input id="email" type="text" name="email" />
+        </div>
+      </div>
+      <input type="submit" value="go" class="btn" />
     </form>
   </body>
 </html>
